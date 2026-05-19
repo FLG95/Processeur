@@ -80,13 +80,13 @@
       <a name="value" val="0x0"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(650,230)" name="Pin">
-      <a name="appearance" val="NewPins"/>
+    <comp lib="0" loc="(650,270)" name="Pin">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="Error"/>
       <a name="type" val="output"/>
     </comp>
-    <comp lib="0" loc="(810,260)" name="Pin">
+    <comp lib="0" loc="(810,270)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="S"/>
@@ -100,35 +100,37 @@
       <a name="width" val="8"/>
     </comp>
     <comp lib="1" loc="(600,340)" name="AND Gate"/>
-    <comp lib="1" loc="(650,250)" name="OR Gate">
+    <comp lib="1" loc="(650,280)" name="OR Gate">
       <a name="facing" val="north"/>
     </comp>
     <comp lib="1" loc="(720,380)" name="NOT Gate">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="13" loc="(730,450)" name="Add_8bits"/>
+    <comp lib="13" loc="(750,450)" name="Add_8bits"/>
     <comp loc="(500,340)" name="complement_2"/>
-    <wire from="(130,260)" to="(130,470)"/>
-    <wire from="(130,470)" to="(510,470)"/>
+    <wire from="(130,260)" to="(130,450)"/>
+    <wire from="(130,450)" to="(530,450)"/>
     <wire from="(230,260)" to="(230,280)"/>
     <wire from="(230,280)" to="(230,340)"/>
     <wire from="(230,280)" to="(370,280)"/>
     <wire from="(230,340)" to="(280,340)"/>
     <wire from="(310,240)" to="(370,240)"/>
     <wire from="(420,260)" to="(450,260)"/>
+    <wire from="(480,260)" to="(510,260)"/>
     <wire from="(500,340)" to="(510,340)"/>
     <wire from="(500,360)" to="(550,360)"/>
-    <wire from="(510,340)" to="(510,450)"/>
+    <wire from="(510,340)" to="(510,470)"/>
+    <wire from="(510,470)" to="(530,470)"/>
     <wire from="(600,340)" to="(630,340)"/>
-    <wire from="(630,300)" to="(630,340)"/>
-    <wire from="(650,230)" to="(650,250)"/>
-    <wire from="(670,300)" to="(670,380)"/>
+    <wire from="(630,330)" to="(630,340)"/>
+    <wire from="(650,270)" to="(650,280)"/>
+    <wire from="(670,330)" to="(670,380)"/>
     <wire from="(670,380)" to="(720,380)"/>
-    <wire from="(730,450)" to="(810,450)"/>
-    <wire from="(730,470)" to="(760,470)"/>
     <wire from="(750,380)" to="(760,380)"/>
+    <wire from="(750,450)" to="(810,450)"/>
+    <wire from="(750,470)" to="(760,470)"/>
     <wire from="(760,380)" to="(760,470)"/>
-    <wire from="(810,260)" to="(810,450)"/>
+    <wire from="(810,270)" to="(810,450)"/>
   </circuit>
   <circuit name="complement_2">
     <a name="appearance" val="logisim_evolution"/>
@@ -138,7 +140,7 @@
     <comp lib="0" loc="(180,260)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
-      <a name="label" val="A"/>
+      <a name="label" val="B"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(210,420)" name="Constant">
@@ -153,7 +155,7 @@
     <comp lib="0" loc="(570,260)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
-      <a name="label" val="A_to_2"/>
+      <a name="label" val="B_to_2"/>
       <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>

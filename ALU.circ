@@ -362,7 +362,7 @@
     <comp lib="0" loc="(320,170)" name="Splitter">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="0" loc="(480,90)" name="Pin">
+    <comp lib="0" loc="(350,90)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="S"/>
@@ -394,8 +394,8 @@
     <wire from="(300,140)" to="(300,150)"/>
     <wire from="(310,140)" to="(310,150)"/>
     <wire from="(320,170)" to="(770,170)"/>
-    <wire from="(480,110)" to="(830,110)"/>
-    <wire from="(480,90)" to="(480,110)"/>
+    <wire from="(350,110)" to="(830,110)"/>
+    <wire from="(350,90)" to="(350,110)"/>
     <wire from="(610,200)" to="(710,200)"/>
     <wire from="(610,280)" to="(750,280)"/>
     <wire from="(610,360)" to="(710,360)"/>

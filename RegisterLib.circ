@@ -209,26 +209,36 @@
       <a name="label" val="Data"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(830,340)" name="Pin">
+    <comp lib="0" loc="(630,840)" name="Splitter">
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(690,760)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="S_1bit"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(830,280)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="SlctA"/>
-      <a name="width" val="4"/>
+      <a name="width" val="3"/>
     </comp>
-    <comp lib="0" loc="(830,740)" name="Pin">
+    <comp lib="0" loc="(830,680)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="SlctB"/>
-      <a name="width" val="4"/>
+      <a name="width" val="3"/>
     </comp>
-    <comp lib="0" loc="(900,220)" name="Pin">
+    <comp lib="0" loc="(900,190)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="A"/>
       <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(930,610)" name="Pin">
+    <comp lib="0" loc="(930,580)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="B"/>
@@ -238,12 +248,12 @@
     <comp lib="2" loc="(180,600)" name="Decoder">
       <a name="select" val="4"/>
     </comp>
-    <comp lib="2" loc="(850,220)" name="Multiplexer">
-      <a name="select" val="4"/>
+    <comp lib="2" loc="(850,190)" name="Multiplexer">
+      <a name="select" val="3"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="2" loc="(850,610)" name="Multiplexer">
-      <a name="select" val="4"/>
+    <comp lib="2" loc="(850,580)" name="Multiplexer">
+      <a name="select" val="3"/>
       <a name="width" val="8"/>
     </comp>
     <comp loc="(600,150)" name="Register_8bit"/>
@@ -301,17 +311,21 @@
     <wire from="(600,470)" to="(630,470)"/>
     <wire from="(600,550)" to="(640,550)"/>
     <wire from="(600,630)" to="(650,630)"/>
-    <wire from="(600,710)" to="(660,710)"/>
+    <wire from="(600,710)" to="(620,710)"/>
     <wire from="(610,170)" to="(610,310)"/>
     <wire from="(610,170)" to="(720,170)"/>
     <wire from="(620,180)" to="(620,390)"/>
     <wire from="(620,180)" to="(710,180)"/>
+    <wire from="(620,710)" to="(620,840)"/>
+    <wire from="(620,710)" to="(660,710)"/>
+    <wire from="(620,840)" to="(630,840)"/>
     <wire from="(630,190)" to="(630,470)"/>
     <wire from="(630,190)" to="(700,190)"/>
     <wire from="(640,200)" to="(640,550)"/>
     <wire from="(640,200)" to="(690,200)"/>
     <wire from="(650,210)" to="(650,630)"/>
     <wire from="(650,210)" to="(680,210)"/>
+    <wire from="(650,760)" to="(690,760)"/>
     <wire from="(660,220)" to="(660,710)"/>
     <wire from="(660,220)" to="(670,220)"/>
     <wire from="(670,220)" to="(670,610)"/>
@@ -338,10 +352,10 @@
     <wire from="(740,150)" to="(740,540)"/>
     <wire from="(740,150)" to="(810,150)"/>
     <wire from="(740,540)" to="(810,540)"/>
-    <wire from="(830,300)" to="(830,340)"/>
-    <wire from="(830,690)" to="(830,740)"/>
-    <wire from="(850,220)" to="(900,220)"/>
-    <wire from="(850,610)" to="(930,610)"/>
+    <wire from="(830,230)" to="(830,280)"/>
+    <wire from="(830,620)" to="(830,680)"/>
+    <wire from="(850,190)" to="(900,190)"/>
+    <wire from="(850,580)" to="(930,580)"/>
   </circuit>
   <circuit name="Register_1bit">
     <a name="appearance" val="logisim_evolution"/>

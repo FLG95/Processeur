@@ -19,11 +19,12 @@
   <lib desc="#BFH-Praktika" name="10"/>
   <lib desc="#Input/Output-Extra" name="11"/>
   <lib desc="#Soc" name="12"/>
-  <lib desc="file#SubtractorLib.circ" name="13"/>
-  <lib desc="file#ComparatorLib.circ" name="14"/>
-  <lib desc="file#AdderLib.circ" name="15"/>
+  <lib desc="file#RegisterLib.circ" name="13"/>
+  <lib desc="file#OffsetAndRotationLib.circ" name="14"/>
+  <lib desc="file#ComparatorLib.circ" name="15"/>
   <lib desc="file#OperatorLib.circ" name="16"/>
-  <lib desc="file#OffsetAndRotationLib.circ" name="17"/>
+  <lib desc="file#SubtractorLib.circ" name="17"/>
+  <lib desc="file#AdderLib.circ" name="18"/>
   <main name="ALU"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -62,45 +63,73 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(190,170)" name="Pin">
+    <comp lib="0" loc="(390,260)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="A"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(490,260)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="B"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(270,170)" name="Pin">
+    <comp lib="0" loc="(570,260)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="SlctOP"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(590,170)" name="Pin">
+    <comp lib="0" loc="(80,310)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="Data"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(80,350)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(80,370)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(80,390)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(890,260)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="C"/>
       <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(90,170)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="south"/>
-      <a name="label" val="A"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="6" loc="(530,170)" name="LED">
+    <comp lib="13" loc="(370,330)" name="RegisterBand_bit"/>
+    <comp lib="6" loc="(830,260)" name="LED">
       <a name="facing" val="south"/>
     </comp>
-    <comp loc="(520,240)" name="ALU"/>
-    <wire from="(190,170)" to="(190,260)"/>
-    <wire from="(190,260)" to="(300,260)"/>
-    <wire from="(270,170)" to="(270,280)"/>
-    <wire from="(270,280)" to="(300,280)"/>
-    <wire from="(520,240)" to="(530,240)"/>
-    <wire from="(520,260)" to="(590,260)"/>
-    <wire from="(530,170)" to="(530,240)"/>
-    <wire from="(590,170)" to="(590,260)"/>
-    <wire from="(90,170)" to="(90,240)"/>
-    <wire from="(90,240)" to="(300,240)"/>
+    <comp loc="(820,330)" name="ALU"/>
+    <wire from="(370,330)" to="(390,330)"/>
+    <wire from="(370,350)" to="(490,350)"/>
+    <wire from="(390,260)" to="(390,330)"/>
+    <wire from="(390,330)" to="(600,330)"/>
+    <wire from="(490,260)" to="(490,350)"/>
+    <wire from="(490,350)" to="(600,350)"/>
+    <wire from="(570,260)" to="(570,370)"/>
+    <wire from="(570,370)" to="(600,370)"/>
+    <wire from="(80,310)" to="(80,330)"/>
+    <wire from="(80,330)" to="(150,330)"/>
+    <wire from="(80,350)" to="(150,350)"/>
+    <wire from="(80,370)" to="(150,370)"/>
+    <wire from="(80,390)" to="(150,390)"/>
+    <wire from="(820,330)" to="(830,330)"/>
+    <wire from="(820,350)" to="(890,350)"/>
+    <wire from="(830,260)" to="(830,330)"/>
+    <wire from="(890,260)" to="(890,350)"/>
   </circuit>
   <circuit name="ALU">
     <a name="appearance" val="logisim_evolution"/>
@@ -292,8 +321,8 @@
       <a name="label" val="A"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="13" loc="(610,280)" name="substractor_8bit"/>
-    <comp lib="15" loc="(610,200)" name="Add_8bits"/>
+    <comp lib="17" loc="(610,280)" name="substractor_8bit"/>
+    <comp lib="18" loc="(610,200)" name="Add_8bits"/>
     <comp lib="2" loc="(680,250)" name="Multiplexer">
       <a name="selloc" val="tr"/>
     </comp>
@@ -374,10 +403,10 @@
       <a name="label" val="A"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="14" loc="(610,200)" name="Equal_Comparator_8bit"/>
-    <comp lib="14" loc="(610,280)" name="Different_Operateur_8bit"/>
-    <comp lib="14" loc="(610,360)" name="Superior_Operator_8bit"/>
-    <comp lib="14" loc="(610,440)" name="Inferior_Operator_8bit"/>
+    <comp lib="15" loc="(610,200)" name="Equal_Comparator_8bit"/>
+    <comp lib="15" loc="(610,280)" name="Different_Operateur_8bit"/>
+    <comp lib="15" loc="(610,360)" name="Superior_Operator_8bit"/>
+    <comp lib="15" loc="(610,440)" name="Inferior_Operator_8bit"/>
     <comp lib="2" loc="(790,290)" name="Multiplexer">
       <a name="select" val="2"/>
       <a name="selloc" val="tr"/>
@@ -531,10 +560,10 @@
       <a name="label" val="A"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="17" loc="(600,200)" name="OffsetLeft"/>
-    <comp lib="17" loc="(600,280)" name="OffsetRight"/>
-    <comp lib="17" loc="(600,360)" name="RotationLeft"/>
-    <comp lib="17" loc="(600,430)" name="RotationRight"/>
+    <comp lib="14" loc="(600,200)" name="OffsetLeft"/>
+    <comp lib="14" loc="(600,280)" name="OffsetRight"/>
+    <comp lib="14" loc="(600,360)" name="RotationLeft"/>
+    <comp lib="14" loc="(600,430)" name="RotationRight"/>
     <comp lib="2" loc="(640,120)" name="Multiplexer">
       <a name="facing" val="north"/>
     </comp>

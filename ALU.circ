@@ -19,12 +19,12 @@
   <lib desc="#BFH-Praktika" name="10"/>
   <lib desc="#Input/Output-Extra" name="11"/>
   <lib desc="#Soc" name="12"/>
-  <lib desc="file#OperatorLib.circ" name="13"/>
-  <lib desc="file#SubtractorLib.circ" name="14"/>
-  <lib desc="file#ComparatorLib.circ" name="15"/>
-  <lib desc="file#OffsetAndRotationLib.circ" name="16"/>
+  <lib desc="file#SubtractorLib.circ" name="13"/>
+  <lib desc="file#OffsetAndRotationLib.circ" name="14"/>
+  <lib desc="file#RegisterLib.circ" name="15"/>
+  <lib desc="file#ComparatorLib.circ" name="16"/>
   <lib desc="file#AdderLib.circ" name="17"/>
-  <lib desc="file#RegisterLib.circ" name="18"/>
+  <lib desc="file#OperatorLib.circ" name="18"/>
   <main name="ALU"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -108,7 +108,7 @@
       <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="18" loc="(370,330)" name="RegisterBand_8bit"/>
+    <comp lib="15" loc="(370,330)" name="RegisterBand_8bit"/>
     <comp lib="6" loc="(390,370)" name="LED"/>
     <comp lib="6" loc="(830,260)" name="LED">
       <a name="facing" val="south"/>
@@ -287,7 +287,7 @@
       <a name="label" val="A"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="14" loc="(610,280)" name="substractor_8bit"/>
+    <comp lib="13" loc="(610,280)" name="substractor_8bit"/>
     <comp lib="17" loc="(610,200)" name="Add_8bits"/>
     <comp lib="2" loc="(680,250)" name="Multiplexer">
       <a name="selloc" val="tr"/>
@@ -368,10 +368,10 @@
       <a name="label" val="A"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="15" loc="(610,200)" name="Equal_Comparator_8bit"/>
-    <comp lib="15" loc="(610,280)" name="Different_Operateur_8bit"/>
-    <comp lib="15" loc="(610,360)" name="Superior_Operator_8bit"/>
-    <comp lib="15" loc="(610,440)" name="Inferior_Operator_8bit"/>
+    <comp lib="16" loc="(610,200)" name="Equal_Comparator_8bit"/>
+    <comp lib="16" loc="(610,280)" name="Different_Operateur_8bit"/>
+    <comp lib="16" loc="(610,360)" name="Superior_Operator_8bit"/>
+    <comp lib="16" loc="(610,440)" name="Inferior_Operator_8bit"/>
     <comp lib="2" loc="(790,290)" name="Multiplexer">
       <a name="select" val="2"/>
       <a name="selloc" val="tr"/>
@@ -450,9 +450,9 @@
       <a name="label" val="A"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="13" loc="(610,200)" name="AND_Operator_8bit"/>
-    <comp lib="13" loc="(610,280)" name="OR_Operator_8bit"/>
-    <comp lib="13" loc="(610,370)" name="XOR_Operator_8bit"/>
+    <comp lib="18" loc="(610,200)" name="AND_Operator_8bit"/>
+    <comp lib="18" loc="(610,280)" name="OR_Operator_8bit"/>
+    <comp lib="18" loc="(610,370)" name="XOR_Operator_8bit"/>
     <comp lib="2" loc="(790,290)" name="Multiplexer">
       <a name="select" val="2"/>
       <a name="selloc" val="tr"/>
@@ -497,7 +497,7 @@
       <a name="fanout" val="5"/>
       <a name="incoming" val="5"/>
     </comp>
-    <comp lib="0" loc="(270,90)" name="Pin">
+    <comp lib="0" loc="(260,90)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="SlctOP"/>
@@ -527,11 +527,11 @@
       <a name="label" val="A"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="16" loc="(600,200)" name="OffsetLeft"/>
-    <comp lib="16" loc="(600,280)" name="OffsetRight"/>
-    <comp lib="16" loc="(600,360)" name="RotationLeft"/>
-    <comp lib="16" loc="(600,430)" name="RotationRight"/>
-    <comp lib="16" loc="(600,490)" name="ASR"/>
+    <comp lib="14" loc="(600,200)" name="OffsetLeft"/>
+    <comp lib="14" loc="(600,280)" name="OffsetRight"/>
+    <comp lib="14" loc="(600,360)" name="RotationLeft"/>
+    <comp lib="14" loc="(600,430)" name="RotationRight"/>
+    <comp lib="14" loc="(600,490)" name="ASR"/>
     <comp lib="2" loc="(650,110)" name="Multiplexer">
       <a name="facing" val="north"/>
       <a name="select" val="3"/>

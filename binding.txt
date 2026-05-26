@@ -1,0 +1,40 @@
+Arithmetic
+00 00 - add
+00 01 - sub
+
+Comparator
+01 00 - equal
+01 01 - not equal
+01 10 - inf 
+01 11 - sup
+
+Operator
+10 00 - and
+10 01 - or
+10 10 - xor
+
+Rot et lat
+11 00 - OF
+11 01 - OR
+11 10 - LF
+11 11 - LR
+
+
+Type op
+0001 - arithmétic et logique
+	Operation
+		1000 - add
+		1001 - sub
+		0000 - and
+		0001 - or
+		0010 - xor
+
+0000 - comparaison et rot trans
+	Operation
+		0011 - equal
+		0110 - not equal
+		0101 - sup
+		0001 - inf
+		1001 - LSL
+		
+

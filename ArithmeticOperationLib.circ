@@ -19,7 +19,7 @@
   <lib desc="#BFH-Praktika" name="10"/>
   <lib desc="#Input/Output-Extra" name="11"/>
   <lib desc="#Soc" name="12"/>
-  <main name="Add_1bit"/>
+  <main name="substractor_8bit"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -52,9 +52,123 @@
     <tool lib="5" name="D Flip-Flop"/>
     <tool lib="5" name="Register"/>
   </toolbar>
-  <circuit name="Add_1bit">
+  <circuit name="substractor_8bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Add_1bit"/>
+    <a name="circuit" val="substractor_8bit"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(130,260)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="A"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(230,260)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="B"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(310,240)" name="Constant">
+      <a name="value" val="0x0"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(650,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="Error"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(810,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="S"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="1" loc="(420,260)" name="AND Gate">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="1" loc="(480,260)" name="NOT Gate">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="1" loc="(600,340)" name="AND Gate"/>
+    <comp lib="1" loc="(650,280)" name="OR Gate">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="1" loc="(720,380)" name="NOT Gate">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp loc="(500,340)" name="complement_2"/>
+    <comp loc="(750,450)" name="Add_8bit"/>
+    <wire from="(130,260)" to="(130,450)"/>
+    <wire from="(130,450)" to="(530,450)"/>
+    <wire from="(230,260)" to="(230,280)"/>
+    <wire from="(230,280)" to="(230,340)"/>
+    <wire from="(230,280)" to="(370,280)"/>
+    <wire from="(230,340)" to="(280,340)"/>
+    <wire from="(310,240)" to="(370,240)"/>
+    <wire from="(420,260)" to="(450,260)"/>
+    <wire from="(480,260)" to="(510,260)"/>
+    <wire from="(500,340)" to="(510,340)"/>
+    <wire from="(500,360)" to="(550,360)"/>
+    <wire from="(510,340)" to="(510,470)"/>
+    <wire from="(510,470)" to="(530,470)"/>
+    <wire from="(600,340)" to="(630,340)"/>
+    <wire from="(630,330)" to="(630,340)"/>
+    <wire from="(650,270)" to="(650,280)"/>
+    <wire from="(670,330)" to="(670,380)"/>
+    <wire from="(670,380)" to="(720,380)"/>
+    <wire from="(750,380)" to="(760,380)"/>
+    <wire from="(750,450)" to="(810,450)"/>
+    <wire from="(750,470)" to="(760,470)"/>
+    <wire from="(760,380)" to="(760,470)"/>
+    <wire from="(810,270)" to="(810,450)"/>
+  </circuit>
+  <circuit name="complement_2">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="complement_2"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(180,260)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="B"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(210,420)" name="Constant">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(500,270)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="Overflow"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(570,260)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="B_to_2"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="1" loc="(180,350)" name="NOT Gate">
+      <a name="facing" val="south"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp loc="(460,400)" name="Add_8bit"/>
+    <wire from="(180,260)" to="(180,320)"/>
+    <wire from="(180,350)" to="(180,400)"/>
+    <wire from="(180,400)" to="(240,400)"/>
+    <wire from="(210,420)" to="(240,420)"/>
+    <wire from="(460,400)" to="(570,400)"/>
+    <wire from="(460,420)" to="(500,420)"/>
+    <wire from="(500,270)" to="(500,420)"/>
+    <wire from="(570,260)" to="(570,400)"/>
+  </circuit>
+  <circuit name="Add_1bits">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Add_1bits"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(120,320)" name="Pin">
@@ -97,9 +211,9 @@
     <wire from="(330,390)" to="(370,390)"/>
     <wire from="(420,410)" to="(460,410)"/>
   </circuit>
-  <circuit name="Add_3bit">
+  <circuit name="Add_3bits">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Add_3bit"/>
+    <a name="circuit" val="Add_3bits"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(190,200)" name="Pin">
@@ -127,8 +241,8 @@
       <a name="type" val="output"/>
     </comp>
     <comp lib="1" loc="(740,460)" name="OR Gate"/>
-    <comp loc="(430,200)" name="Add_1bit"/>
-    <comp loc="(680,350)" name="Add_1bit"/>
+    <comp loc="(430,200)" name="Add_1bits"/>
+    <comp loc="(680,350)" name="Add_1bits"/>
     <wire from="(190,200)" to="(210,200)"/>
     <wire from="(190,220)" to="(210,220)"/>
     <wire from="(190,370)" to="(460,370)"/>
@@ -142,9 +256,9 @@
     <wire from="(680,440)" to="(690,440)"/>
     <wire from="(740,460)" to="(750,460)"/>
   </circuit>
-  <circuit name="Add_8bits">
+  <circuit name="Add_8bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Add_8bits"/>
+    <a name="circuit" val="Add_8bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(110,240)" name="Pin">
@@ -187,14 +301,14 @@
       <a name="label" val="Overflow"/>
       <a name="type" val="output"/>
     </comp>
-    <comp loc="(1020,450)" name="Add_3bit"/>
-    <comp loc="(1250,540)" name="Add_3bit"/>
-    <comp loc="(1480,620)" name="Add_3bit"/>
-    <comp loc="(1710,700)" name="Add_3bit"/>
-    <comp loc="(1940,780)" name="Add_3bit"/>
-    <comp loc="(2180,870)" name="Add_3bit"/>
-    <comp loc="(550,300)" name="Add_1bit"/>
-    <comp loc="(790,370)" name="Add_3bit"/>
+    <comp loc="(1020,450)" name="Add_3bits"/>
+    <comp loc="(1250,540)" name="Add_3bits"/>
+    <comp loc="(1480,620)" name="Add_3bits"/>
+    <comp loc="(1710,700)" name="Add_3bits"/>
+    <comp loc="(1940,780)" name="Add_3bits"/>
+    <comp loc="(2180,870)" name="Add_3bits"/>
+    <comp loc="(550,300)" name="Add_1bits"/>
+    <comp loc="(790,370)" name="Add_3bits"/>
     <wire from="(1020,450)" to="(1030,450)"/>
     <wire from="(1020,470)" to="(1020,580)"/>
     <wire from="(1020,580)" to="(1030,580)"/>

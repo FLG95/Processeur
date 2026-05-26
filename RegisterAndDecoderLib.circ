@@ -553,9 +553,9 @@
     <wire from="(870,300)" to="(1060,300)"/>
     <wire from="(90,150)" to="(90,190)"/>
   </circuit>
-  <circuit name="Decoders">
+  <circuit name="Decoder_24bits">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Decoders"/>
+    <a name="circuit" val="Decoder_24bits"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(190,280)" name="Pin">
@@ -567,6 +567,10 @@
       <a name="facing" val="south"/>
       <a name="label" val="Bits24"/>
       <a name="width" val="24"/>
+    </comp>
+    <comp lib="0" loc="(240,380)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="zero"/>
     </comp>
     <comp lib="0" loc="(520,260)" name="Splitter">
       <a name="facing" val="south"/>
@@ -649,6 +653,7 @@
     <wire from="(190,280)" to="(270,280)"/>
     <wire from="(220,190)" to="(220,260)"/>
     <wire from="(220,260)" to="(270,260)"/>
+    <wire from="(240,380)" to="(290,380)"/>
     <wire from="(490,260)" to="(520,260)"/>
     <wire from="(530,280)" to="(530,640)"/>
     <wire from="(530,640)" to="(910,640)"/>

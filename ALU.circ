@@ -20,10 +20,10 @@
   <lib desc="#Input/Output-Extra" name="11"/>
   <lib desc="#Soc" name="12"/>
   <lib desc="file#SubtractorLib.circ" name="13"/>
-  <lib desc="file#OffsetAndRotationLib.circ" name="14"/>
-  <lib desc="file#RegisterLib.circ" name="15"/>
+  <lib desc="file#AdderLib.circ" name="14"/>
+  <lib desc="file#OffsetAndRotationLib.circ" name="15"/>
   <lib desc="file#ComparatorLib.circ" name="16"/>
-  <lib desc="file#AdderLib.circ" name="17"/>
+  <lib desc="file#RegisterLib.circ" name="17"/>
   <lib desc="file#OperatorLib.circ" name="18"/>
   <main name="ALU"/>
   <options>
@@ -108,7 +108,7 @@
       <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="15" loc="(370,330)" name="RegisterBand_8bit"/>
+    <comp lib="17" loc="(370,330)" name="RegisterBand_8bit"/>
     <comp lib="6" loc="(390,370)" name="LED"/>
     <comp lib="6" loc="(830,260)" name="LED">
       <a name="facing" val="south"/>
@@ -148,12 +148,12 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="SlctOP"/>
-      <a name="width" val="5"/>
+      <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(280,90)" name="Splitter">
       <a name="facing" val="south"/>
-      <a name="fanout" val="5"/>
-      <a name="incoming" val="5"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
     </comp>
     <comp lib="0" loc="(310,170)" name="Splitter">
       <a name="facing" val="north"/>
@@ -259,14 +259,14 @@
     </comp>
     <comp lib="0" loc="(270,140)" name="Splitter">
       <a name="facing" val="south"/>
-      <a name="fanout" val="5"/>
-      <a name="incoming" val="5"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
     </comp>
     <comp lib="0" loc="(270,90)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="SlctOP"/>
-      <a name="width" val="5"/>
+      <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(340,90)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -288,7 +288,7 @@
       <a name="width" val="8"/>
     </comp>
     <comp lib="13" loc="(610,280)" name="substractor_8bit"/>
-    <comp lib="17" loc="(610,200)" name="Add_8bits"/>
+    <comp lib="14" loc="(610,200)" name="Add_8bits"/>
     <comp lib="2" loc="(680,250)" name="Multiplexer">
       <a name="selloc" val="tr"/>
     </comp>
@@ -301,8 +301,8 @@
     <wire from="(190,300)" to="(390,300)"/>
     <wire from="(190,90)" to="(190,220)"/>
     <wire from="(270,90)" to="(270,140)"/>
-    <wire from="(320,160)" to="(320,170)"/>
-    <wire from="(320,170)" to="(660,170)"/>
+    <wire from="(310,160)" to="(310,170)"/>
+    <wire from="(310,170)" to="(660,170)"/>
     <wire from="(340,130)" to="(690,130)"/>
     <wire from="(340,90)" to="(340,130)"/>
     <wire from="(480,110)" to="(830,110)"/>
@@ -344,16 +344,16 @@
     </comp>
     <comp lib="0" loc="(270,120)" name="Splitter">
       <a name="facing" val="south"/>
-      <a name="fanout" val="5"/>
-      <a name="incoming" val="5"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
     </comp>
     <comp lib="0" loc="(270,90)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="SlctOP"/>
-      <a name="width" val="5"/>
+      <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(330,170)" name="Splitter">
+    <comp lib="0" loc="(320,170)" name="Splitter">
       <a name="facing" val="north"/>
     </comp>
     <comp lib="0" loc="(350,90)" name="Pin">
@@ -385,9 +385,9 @@
     <wire from="(190,460)" to="(390,460)"/>
     <wire from="(190,90)" to="(190,220)"/>
     <wire from="(270,90)" to="(270,120)"/>
+    <wire from="(300,140)" to="(300,150)"/>
     <wire from="(310,140)" to="(310,150)"/>
-    <wire from="(320,140)" to="(320,150)"/>
-    <wire from="(330,170)" to="(770,170)"/>
+    <wire from="(320,170)" to="(770,170)"/>
     <wire from="(350,110)" to="(830,110)"/>
     <wire from="(350,90)" to="(350,110)"/>
     <wire from="(610,200)" to="(710,200)"/>
@@ -425,16 +425,16 @@
     </comp>
     <comp lib="0" loc="(270,120)" name="Splitter">
       <a name="facing" val="south"/>
-      <a name="fanout" val="5"/>
-      <a name="incoming" val="5"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
     </comp>
     <comp lib="0" loc="(270,90)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="SlctOP"/>
-      <a name="width" val="5"/>
+      <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(330,170)" name="Splitter">
+    <comp lib="0" loc="(320,170)" name="Splitter">
       <a name="facing" val="north"/>
     </comp>
     <comp lib="0" loc="(480,90)" name="Pin">
@@ -465,9 +465,9 @@
     <wire from="(190,390)" to="(390,390)"/>
     <wire from="(190,90)" to="(190,220)"/>
     <wire from="(270,90)" to="(270,120)"/>
+    <wire from="(300,140)" to="(300,150)"/>
     <wire from="(310,140)" to="(310,150)"/>
-    <wire from="(320,140)" to="(320,150)"/>
-    <wire from="(330,170)" to="(770,170)"/>
+    <wire from="(320,170)" to="(770,170)"/>
     <wire from="(480,110)" to="(830,110)"/>
     <wire from="(480,90)" to="(480,110)"/>
     <wire from="(610,200)" to="(710,200)"/>
@@ -494,21 +494,19 @@
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(260,120)" name="Splitter">
       <a name="facing" val="south"/>
-      <a name="fanout" val="5"/>
-      <a name="incoming" val="5"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
     </comp>
     <comp lib="0" loc="(260,90)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="SlctOP"/>
-      <a name="width" val="5"/>
+      <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(320,170)" name="Splitter">
+    <comp lib="0" loc="(310,170)" name="Splitter">
       <a name="facing" val="north"/>
-      <a name="fanout" val="3"/>
-      <a name="incoming" val="3"/>
     </comp>
-    <comp lib="0" loc="(650,90)" name="Pin">
+    <comp lib="0" loc="(630,90)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="Error"/>
@@ -527,25 +525,24 @@
       <a name="label" val="A"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="14" loc="(600,200)" name="OffsetLeft"/>
-    <comp lib="14" loc="(600,280)" name="OffsetRight"/>
-    <comp lib="14" loc="(600,360)" name="RotationLeft"/>
-    <comp lib="14" loc="(600,430)" name="RotationRight"/>
-    <comp lib="14" loc="(600,490)" name="ASR"/>
-    <comp lib="2" loc="(650,110)" name="Multiplexer">
+    <comp lib="15" loc="(600,200)" name="OffsetLeft"/>
+    <comp lib="15" loc="(600,280)" name="OffsetRight"/>
+    <comp lib="15" loc="(600,360)" name="RotationLeft"/>
+    <comp lib="15" loc="(600,430)" name="RotationRight"/>
+    <comp lib="15" loc="(600,490)" name="ASR"/>
+    <comp lib="2" loc="(630,110)" name="Multiplexer">
       <a name="facing" val="north"/>
-      <a name="select" val="3"/>
+      <a name="select" val="2"/>
     </comp>
-    <comp lib="2" loc="(790,310)" name="Multiplexer">
-      <a name="select" val="3"/>
+    <comp lib="2" loc="(790,290)" name="Multiplexer">
+      <a name="select" val="2"/>
       <a name="selloc" val="tr"/>
       <a name="width" val="8"/>
     </comp>
     <wire from="(260,90)" to="(260,120)"/>
     <wire from="(290,140)" to="(290,150)"/>
     <wire from="(300,140)" to="(300,150)"/>
-    <wire from="(310,140)" to="(310,150)"/>
-    <wire from="(320,170)" to="(580,170)"/>
+    <wire from="(310,170)" to="(580,170)"/>
     <wire from="(580,130)" to="(580,170)"/>
     <wire from="(580,130)" to="(610,130)"/>
     <wire from="(580,170)" to="(770,170)"/>
@@ -555,24 +552,21 @@
     <wire from="(600,300)" to="(620,300)"/>
     <wire from="(600,360)" to="(710,360)"/>
     <wire from="(600,430)" to="(720,430)"/>
-    <wire from="(600,490)" to="(730,490)"/>
     <wire from="(600,510)" to="(650,510)"/>
     <wire from="(610,150)" to="(610,220)"/>
     <wire from="(620,150)" to="(620,300)"/>
-    <wire from="(650,150)" to="(650,510)"/>
-    <wire from="(650,90)" to="(650,110)"/>
+    <wire from="(630,90)" to="(630,110)"/>
     <wire from="(710,200)" to="(710,270)"/>
     <wire from="(710,270)" to="(750,270)"/>
     <wire from="(710,290)" to="(710,360)"/>
     <wire from="(710,290)" to="(750,290)"/>
     <wire from="(720,300)" to="(720,430)"/>
     <wire from="(720,300)" to="(750,300)"/>
-    <wire from="(730,310)" to="(730,490)"/>
     <wire from="(730,310)" to="(750,310)"/>
     <wire from="(770,110)" to="(830,110)"/>
     <wire from="(770,170)" to="(770,270)"/>
     <wire from="(770,90)" to="(770,110)"/>
-    <wire from="(790,310)" to="(830,310)"/>
+    <wire from="(790,290)" to="(830,290)"/>
     <wire from="(80,200)" to="(380,200)"/>
     <wire from="(80,200)" to="(80,280)"/>
     <wire from="(80,280)" to="(380,280)"/>
@@ -583,6 +577,6 @@
     <wire from="(80,430)" to="(80,490)"/>
     <wire from="(80,490)" to="(380,490)"/>
     <wire from="(80,90)" to="(80,200)"/>
-    <wire from="(830,110)" to="(830,310)"/>
+    <wire from="(830,110)" to="(830,290)"/>
   </circuit>
 </project>

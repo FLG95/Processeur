@@ -38,3 +38,14 @@ Type op
 		1001 - LSL
 		
 
+REG_IN (const et load) - 0010 0001
+
+0000 0000 - ALU - 00  si c aucun des deux c ALU (on met la valeur qu'on veut)
+ - RAM (=LOAD ) - 01
+0100 0100- CONST - 10
+
+
+JUMP - 0010 0101 -> 1
+
+STORE - 0010 0010 -> 1
+

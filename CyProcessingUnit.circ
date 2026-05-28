@@ -196,7 +196,7 @@
     <wire from="(320,390)" to="(320,470)"/>
     <wire from="(320,390)" to="(340,390)"/>
     <wire from="(320,470)" to="(340,470)"/>
-    <wire from="(540,250)" to="(540,310)"/>
+    <wire from="(540,270)" to="(540,310)"/>
     <wire from="(540,310)" to="(580,310)"/>
     <wire from="(560,390)" to="(560,470)"/>
     <wire from="(560,390)" to="(610,390)"/>
@@ -795,36 +795,48 @@
     <a name="circuit" val="IP"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(420,230)" name="Pin">
+    <comp lib="0" loc="(190,420)" name="Constant"/>
+    <comp lib="0" loc="(430,470)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Kill"/>
     </comp>
-    <comp lib="0" loc="(420,260)" name="Clock">
+    <comp lib="0" loc="(430,500)" name="Clock">
       <a name="appearance" val="NewPins"/>
     </comp>
-    <comp lib="0" loc="(660,160)" name="Pin">
+    <comp lib="0" loc="(670,400)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="type" val="output"/>
       <a name="width" val="24"/>
     </comp>
-    <comp lib="13" loc="(410,160)" name="Register_24bit"/>
-    <comp lib="5" loc="(550,160)" name="Counter">
+    <comp lib="0" loc="(780,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="13" loc="(420,400)" name="Register_24bit"/>
+    <comp lib="2" loc="(730,270)" name="Multiplexer">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="5" loc="(560,400)" name="Counter">
       <a name="appearance" val="classic"/>
       <a name="max" val="0xffffff"/>
       <a name="width" val="24"/>
     </comp>
-    <wire from="(150,120)" to="(150,160)"/>
-    <wire from="(150,120)" to="(590,120)"/>
-    <wire from="(150,160)" to="(190,160)"/>
-    <wire from="(410,160)" to="(520,160)"/>
-    <wire from="(420,230)" to="(540,230)"/>
-    <wire from="(420,260)" to="(530,260)"/>
-    <wire from="(530,180)" to="(530,260)"/>
-    <wire from="(540,180)" to="(540,230)"/>
-    <wire from="(550,160)" to="(590,160)"/>
-    <wire from="(590,120)" to="(590,160)"/>
-    <wire from="(590,160)" to="(660,160)"/>
+    <wire from="(160,360)" to="(160,400)"/>
+    <wire from="(160,360)" to="(600,360)"/>
+    <wire from="(160,400)" to="(200,400)"/>
+    <wire from="(190,420)" to="(200,420)"/>
+    <wire from="(420,400)" to="(530,400)"/>
+    <wire from="(430,470)" to="(550,470)"/>
+    <wire from="(430,500)" to="(540,500)"/>
+    <wire from="(540,420)" to="(540,500)"/>
+    <wire from="(550,420)" to="(550,470)"/>
+    <wire from="(560,400)" to="(600,400)"/>
+    <wire from="(600,360)" to="(600,400)"/>
+    <wire from="(600,400)" to="(670,400)"/>
+    <wire from="(730,270)" to="(780,270)"/>
   </circuit>
   <circuit name="Decoders_2">
     <a name="appearance" val="logisim_evolution"/>

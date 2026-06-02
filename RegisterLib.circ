@@ -198,7 +198,7 @@
     <a name="circuit" val="RegisterBand_8bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(180,670)" name="Pin">
+    <comp lib="0" loc="(180,760)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="SlctC"/>
@@ -245,7 +245,8 @@
       <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="2" loc="(180,600)" name="Decoder">
+    <comp lib="2" loc="(180,610)" name="Decoder">
+      <a name="enable" val="false"/>
       <a name="select" val="4"/>
     </comp>
     <comp lib="2" loc="(850,190)" name="Multiplexer">
@@ -264,7 +265,7 @@
     <comp loc="(600,550)" name="Register_8bit"/>
     <comp loc="(600,630)" name="Register_8bit"/>
     <comp loc="(600,710)" name="Register_1bit"/>
-    <wire from="(180,600)" to="(180,670)"/>
+    <wire from="(180,610)" to="(180,760)"/>
     <wire from="(200,150)" to="(340,150)"/>
     <wire from="(200,450)" to="(230,450)"/>
     <wire from="(200,460)" to="(240,460)"/>
@@ -273,12 +274,12 @@
     <wire from="(200,490)" to="(380,490)"/>
     <wire from="(200,500)" to="(260,500)"/>
     <wire from="(200,510)" to="(250,510)"/>
-    <wire from="(200,520)" to="(240,520)"/>
+    <wire from="(200,530)" to="(240,530)"/>
     <wire from="(230,170)" to="(230,450)"/>
     <wire from="(230,170)" to="(380,170)"/>
     <wire from="(240,250)" to="(240,460)"/>
     <wire from="(240,250)" to="(380,250)"/>
-    <wire from="(240,520)" to="(240,730)"/>
+    <wire from="(240,530)" to="(240,730)"/>
     <wire from="(240,730)" to="(380,730)"/>
     <wire from="(250,330)" to="(250,470)"/>
     <wire from="(250,330)" to="(380,330)"/>

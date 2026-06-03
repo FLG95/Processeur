@@ -85,15 +85,15 @@
       <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(230,620)" name="Clock">
-      <a name="appearance" val="NewPins"/>
-    </comp>
     <comp lib="0" loc="(2330,370)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="C"/>
       <a name="type" val="output"/>
       <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(330,700)" name="Clock">
+      <a name="appearance" val="NewPins"/>
     </comp>
     <comp lib="0" loc="(850,660)" name="Splitter">
       <a name="fanout" val="4"/>
@@ -224,7 +224,6 @@
     <wire from="(900,480)" to="(1570,480)"/>
     <wire from="(900,480)" to="(900,610)"/>
     <wire from="(920,400)" to="(930,400)"/>
-    <wire from="(920,720)" to="(1040,720)"/>
     <wire from="(930,230)" to="(1040,230)"/>
     <wire from="(930,230)" to="(930,360)"/>
     <wire from="(930,360)" to="(1430,360)"/>

@@ -1,3 +1,4 @@
 CNST, 38, R1
 CNST, 59, R2
 CNST, 00, R3
+ADD, R1, R2, R3

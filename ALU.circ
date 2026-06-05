@@ -19,8 +19,8 @@
   <lib desc="#BFH-Praktika" name="10"/>
   <lib desc="#Input/Output-Extra" name="11"/>
   <lib desc="#Soc" name="12"/>
-  <lib desc="file#OffsetAndRotationLib.circ" name="13"/>
-  <lib desc="file#ArithmeticOperationLib.circ" name="14"/>
+  <lib desc="file#ArithmeticOperationLib.circ" name="13"/>
+  <lib desc="file#OffsetAndRotationLib.circ" name="14"/>
   <lib desc="file#ComparatorAndOperatorLib.circ" name="15"/>
   <main name="ALU"/>
   <options>
@@ -56,10 +56,42 @@
     <tool lib="5" name="Register"/>
   </toolbar>
   <circuit name="ALU">
-    <a name="appearance" val="logisim_evolution"/>
+    <a name="appearance" val="custom"/>
     <a name="circuit" val="ALU"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <path d="M130,45 Q156,-6 190,44" fill="#f7ffd8" stroke="none"/>
+      <polygon fill="#f7ffd8" points="130,45 130,86 189,87 190,43" stroke="none"/>
+      <path d="M146,163 Q157,170 167,163" fill="#ffffff" stroke="none"/>
+      <polygon fill="#f7ffd8" points="147,162 147,144 170,144 169,162" stroke="none"/>
+      <path d="M148,161 Q160,169 169,160" fill="#f7ffd8" stroke="none"/>
+      <path d="M131,125 Q157,167 189,125" fill="#f7ffd8" stroke="#000000"/>
+      <polygon fill="#f7ffd8" points="132,128 130,86 190,87 189,126" stroke="none"/>
+      <path d="M139,111 Q159,153 178,111" fill="none" stroke="#000000"/>
+      <path d="M131,125 Q158,146 188,125" fill="none" stroke="#000000"/>
+      <path d="M139,111 Q160,71 178,110" fill="none" stroke="#000000"/>
+      <path d="M131,95 Q162,79 189,93" fill="none" stroke="#000000"/>
+      <ellipse cx="158" cy="99" fill="#ffe6b1" rx="12" ry="21" stroke="none"/>
+      <polyline fill="none" points="130,95 131,125" stroke="#000000"/>
+      <polyline fill="none" points="189,93 189,125" stroke="#000000"/>
+      <rect height="9" stroke="none" width="19" x="149" y="78"/>
+      <path d="M146,97 Q146,68 159,84" stroke="none"/>
+      <path d="M159,86 Q168,67 171,95" stroke="none"/>
+      <ellipse cx="153" cy="100" rx="1" ry="1" stroke="none"/>
+      <ellipse cx="162" cy="100" rx="1" ry="1" stroke="none"/>
+      <rect fill="#ffffff" height="2" stroke="none" width="7" x="155" y="114"/>
+      <path d="M149,103 Q158,132 169,103" fill="none" stroke="#000000"/>
+      <rect fill="#ffffff" height="2" stroke="none" width="11" x="153" y="110"/>
+      <path d="M149,103 Q159,118 169,103" fill="none" stroke="#000000"/>
+      <polyline fill="none" points="158,101 160,104 158,105" stroke="#000000"/>
+      <circ-anchor facing="east" x="270" y="60"/>
+      <circ-port dir="in" pin="180,70" x="50" y="70"/>
+      <circ-port dir="in" pin="280,70" x="50" y="80"/>
+      <circ-port dir="in" pin="80,70" x="50" y="60"/>
+      <circ-port dir="out" pin="620,60" x="270" y="60"/>
+      <circ-port dir="out" pin="770,70" x="270" y="70"/>
+    </appear>
     <comp lib="0" loc="(180,70)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
@@ -209,8 +241,8 @@
       <a name="label" val="A"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="14" loc="(610,200)" name="Add_8bit"/>
-    <comp lib="14" loc="(610,280)" name="substractor_8bit"/>
+    <comp lib="13" loc="(610,200)" name="Add_8bit"/>
+    <comp lib="13" loc="(610,280)" name="substractor_8bit"/>
     <comp lib="2" loc="(680,250)" name="Multiplexer">
       <a name="selloc" val="tr"/>
     </comp>
@@ -447,11 +479,11 @@
       <a name="label" val="A"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="13" loc="(600,200)" name="OffsetLeft"/>
-    <comp lib="13" loc="(600,280)" name="OffsetRight"/>
-    <comp lib="13" loc="(600,360)" name="RotationLeft"/>
-    <comp lib="13" loc="(600,430)" name="RotationRight"/>
-    <comp lib="13" loc="(600,490)" name="ASR"/>
+    <comp lib="14" loc="(600,200)" name="OffsetLeft"/>
+    <comp lib="14" loc="(600,280)" name="OffsetRight"/>
+    <comp lib="14" loc="(600,360)" name="RotationLeft"/>
+    <comp lib="14" loc="(600,430)" name="RotationRight"/>
+    <comp lib="14" loc="(600,490)" name="ASR"/>
     <comp lib="2" loc="(630,110)" name="Multiplexer">
       <a name="facing" val="north"/>
       <a name="select" val="2"/>

@@ -195,10 +195,41 @@
     <wire from="(990,610)" to="(1120,610)"/>
   </circuit>
   <circuit name="RegisterBand_8bit">
-    <a name="appearance" val="logisim_evolution"/>
+    <a name="appearance" val="custom"/>
     <a name="circuit" val="RegisterBand_8bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <polygon fill="#537cf7" points="139,100 138,89 147,89 147,100" stroke="none"/>
+      <polygon fill="#537cf7" points="172,100 170,90 179,90 180,100" stroke="none"/>
+      <text dominant-baseline="central" fill="#537cf7" font-family="SansSerif" font-size="64" font-style="italic" font-weight="bold" text-anchor="middle" x="159" y="54">67</text>
+      <polygon fill="#537cf7" points="191,72 188,63 192,61 196,70" stroke="none"/>
+      <polygon fill="#353982" points="186,53 193,61 188,65 182,58" stroke="none"/>
+      <polygon fill="#537cf7" points="120,62 123,54 128,58 125,63" stroke="none"/>
+      <polygon fill="#353982" points="122,54 132,47 130,58 127,60" stroke="none"/>
+      <polygon fill="#537cf7" points="170,90 167,77 176,79 179,90" stroke="none"/>
+      <polygon fill="#353982" points="167,85 181,85 180,92 168,92" stroke="none"/>
+      <polygon fill="#537cf7" points="138,91 139,78 147,79 147,90" stroke="none"/>
+      <polygon fill="#353982" points="137,85 150,85 149,93 137,93" stroke="none"/>
+      <polygon fill="#ffffff" points="187,74 198,68 201,72 212,75 213,80 204,79 210,87 206,90 200,81 206,90 201,91 196,83 201,91 197,91" stroke="#000000"/>
+      <polygon fill="#ffffff" points="127,68 126,61 119,56 114,59 108,55 104,60 110,64 105,70 107,73 109,72 114,69 108,73 112,76 116,72 112,76 118,78 125,71 124,65 119,62 123,65 125,71" stroke="#000000"/>
+      <ellipse cx="140" cy="46" fill="#ffffff" rx="5" ry="5" stroke="#3a57ad"/>
+      <ellipse cx="141" cy="46" fill-opacity="0.957" rx="2" ry="2" stroke="none"/>
+      <ellipse cx="182" cy="45" fill="#ffffff" rx="5" ry="5" stroke="#3a57ad"/>
+      <ellipse cx="181" cy="45" fill-opacity="0.957" rx="2" ry="2" stroke="none"/>
+      <polygon fill="#ffffff" points="172,98 180,98 182,105 189,106 189,112 174,112" stroke="#000000"/>
+      <polygon fill="#ffffff" points="147,100 139,100 139,107 132,108 132,115 149,114" stroke="#000000"/>
+      <polyline fill="none" points="138,56 151,56" stroke="#537cf7" stroke-width="6"/>
+      <path d="M133,59 Q141,88 154,59" fill="#ffffff" stroke="#537cf7" stroke-width="5"/>
+      <circ-anchor facing="east" x="270" y="60"/>
+      <circ-port dir="in" pin="180,760" x="50" y="90"/>
+      <circ-port dir="in" pin="200,150" x="50" y="60"/>
+      <circ-port dir="in" pin="830,280" x="50" y="70"/>
+      <circ-port dir="in" pin="830,680" x="50" y="80"/>
+      <circ-port dir="out" pin="690,760" x="270" y="80"/>
+      <circ-port dir="out" pin="900,190" x="270" y="60"/>
+      <circ-port dir="out" pin="930,580" x="270" y="70"/>
+    </appear>
     <comp lib="0" loc="(180,760)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
